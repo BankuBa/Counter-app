@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(albert-einstein-pictures-1920-x-1080-d6gf5vedqy3fk5d8.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+h1{
+  margin-bottom: 2rem;
+  color: white;
+}
+button{
+  width: 6rem;
+  height: 2.2rem;
+  border-radius: 5px;
+  background: linear-gradient(217deg, rgb(41, 41, 102) ,rgb(187, 130, 140));
+  color: white;
+  border: 0;
+}
+button:hover{
+ background: linear-gradient(217deg, rgb(92, 92, 221) ,rgb(226, 166, 177));
+ scale: 1.05;
+ transition: 0.5s;
+}
+.counter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+}
+
+@media (max-width: 900px) {
+  .container {
+    background: url(mobile_Einstein.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .counter{
+    background: rgba(88, 86, 86, 0.664);
+    border-radius: 10px;
+    height: 25rem;
+  }
+}
